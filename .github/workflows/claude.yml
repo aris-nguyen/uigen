@@ -42,6 +42,7 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: ${{ vars.CLAUDE_MODEL }}
 
           custom_instructions: |
             The project is already set up with all dependencies installed.
